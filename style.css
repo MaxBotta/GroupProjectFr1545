@@ -1,5 +1,5 @@
 body {
-    background-color: #fffff7;
+    background-color: #f3f3c1;
 }
 
 
@@ -85,7 +85,7 @@ body {
 }
 
 .card {
-    background-color: white;
+    background-color: rgb(212, 206, 186);
     width: 33%;
     min-height: 280px;
 }
