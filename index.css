@@ -1,0 +1,83 @@
+.teachers {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.teachers-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  justify-items: center;
+  margin-top: 40px;
+}
+
+.teacher-box {
+  width: 260px;
+  height: 260px;
+  padding: 20px;
+  border: 1px solid #e5e5e5;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.teacher-box img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.teacher-box h3 {
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+.teacher-box .role {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.contact-btn {
+  padding: 10px 18px;
+  border: 1px solid #007bff;
+  background: transparent;
+  color: #007bff;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.contact-btn:hover {
+  background: #007bff;
+  color: #fff;
+}
+
+/* ---------- RESPONSIVE ---------- */
+
+@media (max-width: 1200px) {
+  .teachers-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .teachers-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .teachers-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .teacher-box {
+    width: 90%;
+    height: auto;
+  }
+}
