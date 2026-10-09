@@ -31,20 +31,17 @@
 }
 
 .newsletter-input {
-  padding: 10px 15px; 
+  padding: 10px 15px;
   border: none;
-  border-radius: 4px 0 0 4px;
   width: 300px;
   font-size: 14px;
 }
 
 .newsletter-btn {
-  background-color: #0F62FE
-;
+  background-color: #0f62fe;
   color: white;
   border: none;
   padding: 10px 20px;
-  border-radius: 0 4px 4px 0;
   cursor: pointer;
   font-weight: bold;
   font-size: 14px;
@@ -115,24 +112,26 @@
 }
 
 @media (max-width: 768px) {
-  .footer-top, .footer-content, .footer-bottom {
+  .footer-top,
+  .footer-content,
+  .footer-bottom {
     flex-direction: column;
     align-items: flex-start;
     gap: 20px;
   }
-  
+
   .newsletter-form {
     width: 100%;
   }
-  
+
   .newsletter-input {
     width: 100%;
   }
-  
+
   .footer-legal {
     margin-top: 10px;
   }
-  
+
   .footer-legal a {
     margin-left: 0;
     margin-right: 20px;
