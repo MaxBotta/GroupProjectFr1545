@@ -9,26 +9,24 @@ body {
 }
 
 header {
-  background-color: rgb(43, 145, 74);
-}
-
-header img {
-  height: 60px;
-}
-Ul {
-  display: flex;
-}
-
-a {
-  color: white;
-}
-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
 
   background-color: #477443;
   padding: 20px 100px;
+}
+
+header img {
+  height: 60px;
+}
+
+Ul {
+  display: flex;
+}
+
+header a {
+  color: white;
 }
 
 nav {
@@ -158,13 +156,6 @@ nav a {
 
 .teacher small {
   color: gray;
-}
-
-header {
-  background: #007bff;
-  color: white;
-  padding: 20px;
-  text-align: center;
 }
 
 .hero {
