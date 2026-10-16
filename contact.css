@@ -1,0 +1,162 @@
+/* NAVBAR */
+.navbar {
+    background: #045124;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+.nav-links .active {
+    text-decoration: underline;
+}
+
+/* CONTACT SECTION */
+.contact-section {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.contact-section h4 {
+    color: #007bff;
+    font-size: 16px;
+}
+
+.contact-section h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form label {
+    text-align: left;
+    font-weight: 600;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 0px; /* ← ECKIG */
+    border: 1px solid #ccc;
+}
+
+.send-btn {
+    padding: 12px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 0px; /* ← ECKIG */
+    cursor: pointer;
+}
+
+/* FOOTER */
+.footer {
+    background: #045124;
+    color: rgb(0, 0, 0);
+    padding: 40px;
+}
+
+.footer-logo {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+/* SUBSCRIBE RIGHT SIDE */
+.subscribe-box {
+    margin: 20px 0;
+    text-align: right;
+}
+
+.subscribe-row {
+    display: inline-flex;
+    gap: 10px;
+}
+
+.subscribe-row input {
+    padding: 10px;
+    border-radius: 0px; /* ← ECKIG */
+    border: none;
+    width: 250px;
+}
+
+.subscribe-btn {
+    padding: 10px 20px;
+    background: #007bff;
+    border: none;
+    border-radius: 0px; /* ← ECKIG */
+    color: white;
+}
+
+/* FOOTER COLUMNS */
+.footer-columns {
+    display: flex;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.footer-col h4 {
+    margin-bottom: 10px;
+}
+
+.footer-col a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 6px;
+}
+
+.store-btn {
+    width: 120px;
+    margin-bottom: 10px;
+}
+
+/* SOCIALS */
+.socials-footer {
+    margin-top: 30px;
+}
+
+.social-icons img {
+    width: 24px;
+    margin-right: 10px;
+}
+
+/* BOTTOM FOOTER */
+.footer-bottom {
+    margin-top: 40px;
+    border-top: 1px solid rgba(255,255,255,0.3);
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-links a {
+    color: white;
+    margin-left: 15px;
+    text-decoration: none;
+}
