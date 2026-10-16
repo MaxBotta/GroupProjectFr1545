@@ -1,15 +1,11 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 body {
   display: flex;
   flex-direction: column;
   font-family: Arial, sans-serif;
   background-color: #ffffed;
   color: #333333;
+  margin: 0;
+  padding: 0;
 }
 
 header {
@@ -162,4 +158,31 @@ nav a {
 
 .teacher small {
   color: gray;
+}
+
+header {
+  background: #007bff;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.hero-buttons {
+  margin-top: 30px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.btn {
+  padding: 12px 24px;
+  background: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
 }
