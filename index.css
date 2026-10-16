@@ -1,31 +1,13 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 body {
   display: flex;
   flex-direction: column;
   font-family: Arial, sans-serif;
   background-color: #ffffed;
   color: #333333;
+  margin: 0;
+  padding: 0;
 }
 
-header {
-  background-color: rgb(43, 145, 74);
-}
-
-header img {
-  height: 60px;
-}
-Ul {
-  display: flex;
-}
-
-a {
-  color: white;
-}
 header {
   display: flex;
   align-items: center;
@@ -33,6 +15,18 @@ header {
 
   background-color: #477443;
   padding: 20px 100px;
+}
+
+header img {
+  height: 60px;
+}
+
+Ul {
+  display: flex;
+}
+
+header a {
+  color: white;
 }
 
 nav {
@@ -162,4 +156,24 @@ nav a {
 
 .teacher small {
   color: gray;
+}
+
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.hero-buttons {
+  margin-top: 30px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.btn {
+  padding: 12px 24px;
+  background: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
 }
