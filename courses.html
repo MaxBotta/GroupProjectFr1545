@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <link href="style.css" rel="stylesheet" />
+    <link href="courses.css" rel="stylesheet" />
+  </head>
+  <body>
+    <main>
+      <section class="themen">
+        <p class="subtitle">THEMENGEBIETE</p>
+
+        <h2>Wählen Sie eines unserer Themengebiete</h2>
+
+        <div class="cards">
+          <div class="card">
+            <img src="./images/courses/programmin1.avif" alt="Programmierung" />
+
+            <h3>Programmierung</h3>
+
+            <p>
+              Lerne die Grundlagen des Programmierens und entwickle eigene
+              Projekte.
+            </p>
+          </div>
+
+          <div class="card">
+            <img
+              src="./images/courses/tirza-van-dijk-o1SKqmgSDbg-unsplash.jpg"
+              alt="Design"
+            />
+
+            <h3>Design</h3>
+
+            <p>Entdecke kreative Gestaltung und moderne Design-Techniken.</p>
+          </div>
+
+          <div class="card">
+            <img
+              src="./images/courses/thomas-t-OPpCbAAKWv8-unsplash.jpg"
+              alt="Mathematik"
+            />
+
+            <h3>Mathematik</h3>
+
+            <p>Verbessere deine mathematischen Fähigkeiten.</p>
+          </div>
+          <div class="card">
+            <img
+              src="./images/courses/growtika-yGQmjh2uOTg-unsplash.jpg"
+              alt="HTML und CSS"
+            />
+
+            <p class="category">Category</p>
+
+            <h3>HTML & CSS Kurs</h3>
+
+            <p>Lerne die Grundlagen von HTML und CSS.</p>
+
+            <p class="teacher">
+              Jane Doe<br />
+              <small>Softwareentwickler</small>
+            </p>
+          </div>
+
+          <div class="card">
+            <img src="./images/courses/javascript.jpg" alt="JavaScript" />
+
+            <p class="category">Category</p>
+
+            <h3>JavaScript Kurs</h3>
+
+            <p>Lerne JavaScript und programmiere interaktive Webseiten.</p>
+
+            <p class="teacher">
+              Jane Doe<br />
+              <small>Senior Designer</small>
+            </p>
+          </div>
+
+          <div class="card">
+            <img src="./images/courses/ui.png" alt="UI Design" />
+
+            <p class="category">Category</p>
+
+            <h3>UI Design</h3>
+
+            <p>
+              Lerne schöne und übersichtliche Benutzeroberflächen zu gestalten.
+            </p>
+
+            <p class="teacher">
+              Jane Doe<br />
+              <small>UI Designer</small>
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-container">
+        <div class="footer-top">
+          <div class="footer-logo">
+            <img src="images/logo.png" alt="MOOC Logo" />
+          </div>
+          <div class="footer-newsletter">
+            <form
+              action="#"
+              method="POST"
+              class="newsletter-form"
+              id="newsletterForm"
+            >
+              <input
+                type="email"
+                placeholder="Enter your email to get the latest news..."
+                required
+                class="newsletter-input"
+              />
+              <button type="submit" class="newsletter-btn">Subscribe</button>
+            </form>
+            <div id="successMessage" class="newsletter-success">
+              Abonnieren war erfolgreich! Gut gemacht! 🎉
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-content">
+          <div class="footer-column">
+            <h3>Beliebte Kurse</h3>
+            <ul>
+              <li><a href="#">Python</a></li>
+              <li><a href="#">HTML</a></li>
+              <li><a href="#">CSS</a></li>
+              <li><a href="#">JavaScript</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>Themengebiete</h3>
+            <ul>
+              <li><a href="#">Informatik</a></li>
+              <li><a href="#">Mathe</a></li>
+              <li><a href="#">Physik</a></li>
+              <li><a href="#">Biologie</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>Links</h3>
+            <ul>
+              <li><a href="index.html">Kurse</a></li>
+              <li><a href="calendar.html">Kalender</a></li>
+              <li><a href="#">Kontakt</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="copyright">
+            <p>Companyname @ 2026. All rights reserved.</p>
+          </div>
+          <div class="footer-legal">
+            <a href="#">Datenschutz</a>
+            <a href="#">Impressum</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document
+        .getElementById("newsletterForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          var msg = document.getElementById("successMessage");
+
+          msg.style.display = "block";
+          msg.style.opacity = "1";
+
+          this.reset();
+
+          setTimeout(function () {
+            msg.style.transition = "opacity 0.5s ease";
+            msg.style.opacity = "0";
+
+            setTimeout(function () {
+              msg.style.display = "none";
+            }, 500);
+          }, 5000);
+        });
+    </script>
+  </body>
+</html>
